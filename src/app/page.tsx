@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div>Hello new project!</div>
+      <h1>Hello new project!</h1>
     </main>
   );
 }
