@@ -1,4 +1,5 @@
-import ThemeSwitcher from '@/components/common/ThemeSwitcher';
+import ThemeSwitcher from '~/components/common/ThemeSwitcher';
+import Button from '~/components/ui/Button';
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
             Next Themes + Tailwind Dark Mode
           </h1>
           <p className="italic text-2xl">with app-dir</p>
-
           <ThemeSwitcher />
+          <Button>Hello</Button>
         </div>
       </div>
     </main>
