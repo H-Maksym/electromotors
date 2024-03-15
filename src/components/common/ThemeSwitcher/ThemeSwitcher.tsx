@@ -1,11 +1,11 @@
 'use client';
-import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
+import { Icons } from '@/components/common/Icons';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
 const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -13,7 +13,7 @@ const ThemeSwitcher = () => {
   }, []);
 
   const handleChangeTheme = () => {
-    setTheme(resolvedTheme === 'light' ? 'dark' : 'light');
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   if (!mounted) {
@@ -28,11 +28,9 @@ const ThemeSwitcher = () => {
         className="flex items-center justify-center rounded-lg p-2 transition-opacity"
         onClick={handleChangeTheme}
       >
-        {resolvedTheme === 'dark' ? (
-          <SunIcon className="h-5 w-5 text-orange-300" />
-        ) : (
-          <MoonIcon className="h-5 w-5 text-slate-800" />
-        )}
+        <Icons.switchThemeLight className="h-10 w-10 text-orange-300 dark:hidden" />
+        <Icons.switchThemeDark className="hidden h-10 w-10 text-slate-800 dark:block" />
+        <span className="sr-only">Toggle theme</span>
       </button>
     </>
   );
