@@ -36,8 +36,16 @@
       "~/*": ["./src/*"],
       "~/components/*": ["./src/components/*"],
       "~/components": ["./src/components"],
-      "~/lib/*": ["./src/lib/*"],
-      "~/lib": ["./src/lib"],
+
+      "~/dictionaries/*": ["./src/dictionaries/*"],
+      "~/dictionaries": ["./src/dictionaries"],
+
+      "~/utils/*": ["./src/lib/utils/*"],
+      "~/utils": ["./src/lib/utils/"],
+
+      "~/constants/*": ["./src/lib/constants/*"],
+      "~/constants": ["./src/lib/constants"],
+
       "~/providers/*": ["./src/providers/*"],
       "~/providers": ["./src/providers"]
     }

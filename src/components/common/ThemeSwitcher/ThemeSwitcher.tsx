@@ -1,5 +1,5 @@
 'use client';
-import { Icons } from '@/components/common/Icons';
+import { Icons } from '~/components/common/Icons';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
