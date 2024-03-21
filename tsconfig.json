@@ -37,8 +37,8 @@
       "~/components/*": ["./src/components/*"],
       "~/components": ["./src/components"],
 
-      "~/dictionaries/*": ["./src/dictionaries/*"],
-      "~/dictionaries": ["./src/dictionaries"],
+      "~/dictionaries/*": ["./messages/*"],
+      "~/dictionaries": ["./messages"],
 
       "~/lib/*": ["./src/lib/*"],
       "~/lib": ["./src/lib/"],

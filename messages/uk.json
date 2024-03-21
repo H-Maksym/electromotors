@@ -1,0 +1,10 @@
+{
+  "pages": {
+    "home": {
+      "title": "Next Themes + Tailwind Dark Mode with app directory",
+      "subtitle": "{locale, select, en {English} uk {Українська} other {Unknown}}",
+      "description": "This is app NextJS!\n"
+    }
+  },
+  "default": {}
+}

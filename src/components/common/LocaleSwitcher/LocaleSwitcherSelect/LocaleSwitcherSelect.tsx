@@ -29,13 +29,13 @@ export default function LocaleSwitcherSelect({
   return (
     <label
       className={cn(
-        'relative size-10  ',
+        'relative size-10 ',
         isPending && 'transition-opacity [&:disabled]:opacity-30'
       )}
     >
       <p className="sr-only">{label}</p>
       <select
-        className="mx-10 inline-flex appearance-none bg-slate-300 bg-transparent px-10  text-4xl"
+        className="mx-10 inline-flex appearance-none bg-zinc-300  bg-transparent px-10  text-4xl"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}

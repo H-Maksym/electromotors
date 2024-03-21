@@ -1,5 +1,6 @@
 'server-only';
 import { notFound } from 'next/navigation';
+
 import { type AbstractIntlMessages } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
 import { locales, type Locale } from '~/lib/i18n/config';
@@ -7,7 +8,7 @@ import { locales, type Locale } from '~/lib/i18n/config';
 // Can be imported from a shared config
 const dictionariesImports = {
   en: () => import('~/dictionaries/en.json'),
-  uk: () => import('~/dictionaries/ua.json'),
+  uk: () => import('~/dictionaries/uk.json'),
 } as const satisfies Record<
   Locale,
   () => Promise<{ default: AbstractIntlMessages }>

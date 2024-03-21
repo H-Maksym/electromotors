@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["electromotors"]
+  "cSpell.words": [
+    "electromotors"
+  ],
+  "i18n-ally.localesPaths": ["messages"], // E.g. "./messages"
+  "i18n-ally.defaultNamespace": "translation",
+  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.keystyle": "nested"
 }

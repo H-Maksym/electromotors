@@ -9,8 +9,21 @@ const nextIntlMiddleware = createMiddleware({
 });
 
 export default function (req: NextRequest): NextResponse {
+
+  // Step 1: Use the incoming request (example)
+  const defaultLocale = req.headers.get('x-your-custom-locale') || 'en';
+ 
+  // Step 2: Create and call the next-intl middleware (example)
   const response = nextIntlMiddleware(req);
+ 
+  // Step 3: Alter the response (example)
+  response.headers.set('x-your-custom-locale', defaultLocale);
+ 
   return response;
+
+
+  // const response = nextIntlMiddleware(req);
+  // return response;
 }
 
 export const config = {
