@@ -4,7 +4,8 @@ import { NextIntlClientProvider, useMessages } from 'next-intl';
 import './globals.css';
 import type { Metadata } from 'next';
 import ThemeProvider from '~/providers/ThemeProvider';
-import { TLanguage } from '~/lib/constants';
+import { type Locale } from '~/lib/i18n/config';
+import LocaleSwitcher from '~/components/common/LocaleSwitcher';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 interface IRootLayoutProps {
-  params: { lang: TLanguage };
+  params: { lang: Locale };
   children: React.ReactNode;
 }
 
@@ -31,6 +32,7 @@ const RootLayout: FC<IRootLayoutProps> = ({ children, params: { lang } }) => {
             enableSystem
             disableTransitionOnChange
           >
+            <LocaleSwitcher />
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>

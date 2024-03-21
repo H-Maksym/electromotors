@@ -1,8 +1,11 @@
 {
-  "indexPage": {
-    "title": "Hello world!"
+  "IndexPage": {
+    "title": "Next Themes + Tailwind Dark Mode with app directory",
+    "description": "This is app NextJS",
+    "this_is_button": "this is button"
   },
   "AdminPage": {
-    "title": "Hello Admin!"
+    "title": "Hello Admin!",
+    "description": "This is description for admin page"
   }
 }

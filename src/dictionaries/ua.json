@@ -1,8 +1,11 @@
 {
-  "indexPage": {
-    "title": "Привіт світ!"
+  "IndexPage": {
+    "title": "Next Themes + Tailwind Dark Mode with app directory",
+    "description": "Це додаток реалізований на NextJS",
+    "this_is_button": "це кнопка"
   },
   "AdminPage": {
-    "title": "Привіт Адмін!"
+    "title": "Привіт Адмін!",
+    "description": "Це опис admin сторінки"
   }
 }
